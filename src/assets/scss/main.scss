@@ -1,0 +1,21 @@
+@import 'reset';
+@import 'color';
+@import 'font';
+@import 'plugin';
+
+@import 'page';
+@import 'navbar';
+@import 'header';
+@import 'footer';
+@import 'spotlight';
+@import 'counter';
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url('./assets/images/bg.jpg');
+  background-color: $dark;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

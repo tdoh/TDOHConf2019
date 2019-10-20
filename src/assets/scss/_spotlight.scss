@@ -1,0 +1,460 @@
+.spotlight {
+  min-height: 100vh;
+  max-width: 900px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 150px;
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+    margin: 1rem .5rem;
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 1440px) {
+    margin-top: 6rem;
+  }
+  &-box {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 2rem;
+    color: $white;
+    &.member {
+      margin: 2rem;
+    }
+    @media screen and (max-width: 1440px) {
+      margin: 1rem 0;
+    }
+    .title {
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $gold;
+      font-size: 28pt;
+      text-align: center;
+      padding: 1rem;
+      span {
+        background: -webkit-linear-gradient(rgba($gold, .1), $gold 85%, rgba($gold, .1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 10px $gold);
+      }
+      @media screen and (max-width: 1440px) {
+        font-size: 22pt;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 20pt;
+      }
+      &.symbol {
+        &:before, &:after {
+          z-index: 0;
+          content: '';
+          border: 1px solid $gold;
+          box-sizing: border-box;
+          border-image: linear-gradient(to right bottom, $gold, rgba($gold, .2)) 1;
+          height: 28pt;
+          width: 28pt;
+        }
+        &:before {
+          transform: rotate(-45deg);
+        }
+        &:after {
+          transform: rotate(135deg);
+        }
+      }
+    }
+    .content {
+      margin: 2rem 1rem;
+      &:not(.no-indent) p {
+        text-indent: 24pt;
+      }
+      p, ul, ol {
+        font-size: 14pt;
+        line-height: 1.6;
+        margin: 1rem 0;
+        @media screen and (max-width: 768px) {
+          font-size: 13pt;
+        }
+      }
+      ul {
+        list-style: disc;
+      }
+      ol {
+        list-style: decimal;
+      }
+      li {
+        margin-left: 25pt;
+        line-height: 1.4;
+        img {
+          width: 100%;
+          max-width: 600px;
+        }
+      }
+      &.center {
+        text-align: center;
+      }
+      a {
+        color: inherit;
+        font-weight: 600;
+      }
+      >img {
+        width: 100%;
+      }
+      .card {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        a {
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+        img {
+          height: 250px;
+          margin: auto;
+          @media screen and (max-width: 768px) {
+            height: 200px;
+          }
+        }
+        p {
+          background: -webkit-linear-gradient(rgba($gold, .1), $gold 85%, rgba($gold, .1));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          filter: drop-shadow(0 0 10px $gold);
+          font-size: 16pt;
+          text-align: center;
+          text-indent: 0;
+          @media screen and (max-width: 768px) {
+            background: -webkit-linear-gradient(rgba($gold, .5), $gold 75%, rgba($gold, .1));
+            -webkit-background-clip: text;
+          }
+        }
+      }
+    }
+  }
+  &-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img.map {
+      position: absolute;
+      width: 1024px;
+      transform: scale(1.25);
+      z-index: -1;
+      @media screen and (max-width: 1440px) {
+        display: none;
+      }
+    }
+    iframe {
+      width: 900px;
+      height: 540px;
+      z-index: 1;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+  &-table {
+    margin: 5rem 0;
+    width: 768px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1rem repeat(3, 2.5rem) 7rem 2.5rem 7rem 2.5rem 7rem 2.5rem 7rem 2.5rem 7rem 2.5rem 7rem 2.5rem 7rem 2.5rem 7rem 2.5rem repeat(8, 2.5rem);
+    grid-template-columns: 4rem repeat(4, 1fr);
+    grid-template-areas:
+      "blank   room-A     room-B     room-C     room-D"
+      "time-0  admission  admission  admission  admission"
+      "time-1  start      start      start      start"
+      "time-2  break-1    break-1    break-1    break-1"
+      /* --------------------------------------------- */
+      "time-3  session-1A session-1B session-1C session-1D"
+      "time-4  session-1A session-1B break-2    session-1D"
+      "time-5  session-1A session-1B session-2C session-1D"
+      "time-6  break-3    break-3    break-3    session-1D"
+      /* --------------------------------------------- */
+      "time-7  session-2A session-2B session-3C session-1D"
+      "time-8  session-2A session-2B break-4    session-1D"
+      "time-9  session-2A session-2B session-4C session-1D"
+      "time-10 break-5    break-5    break-5    session-1D"
+      /* --------------------------------------------- */
+      "time-11 session-3A session-3B session-5C session-1D"
+      "time-12 session-3A session-3B break-6    session-1D"
+      "time-13 session-3A session-3B session-6C session-1D"
+      "time-14 break-7    break-7    break-7    break-7"
+      /* --------------------------------------------- */
+      "time-15 session-4A session-4B session-7C session-2D"
+      "time-16 session-4A session-4B break-8    session-2D"
+      "time-17 session-4A session-4B session-8C session-2D"
+      "time-18 break-9    break-9    session-8C session-2D"
+      /* --------------------------------------------- */
+      "time-19 session-5A session-5B session-8C session-2D"
+      "time-20 session-5A session-5B session-8C session-2D"
+      "time-21 session-5A session-5B session-8C session-2D"
+      /* --------------------------------------------- */
+      "time-22 break-a    break-a    session-8C session-2D"
+      "time-23 lighting   lighting   session-8C session-2D"
+      "time-24 closing    closing    session-8C session-2D"
+      /* -------------------------------------------- */
+      "time-25 ending     ending     ending     ending";
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    grid-gap: 2px;
+    @media screen and (max-width: 1024px) {
+      margin: auto;
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      overflow: visible;
+      grid-template-rows: repeat(3, 2rem) repeat(13, auto) 2rem repeat(7, auto) repeat(4, 2rem);
+      grid-template-columns: 3rem 1fr;
+      grid-template-areas:
+        "time-0  admission"
+        "time-1  start"
+        "time-2  break-1"
+        /* ------------ */
+        "time-3  session-1A"
+        "time-3  session-1B"
+        "time-3  session-1C"
+        "time-3  session-1D"
+        /* ------------ */
+        "time-4  session-2C"
+        /* ------------ */
+        "time-5  session-2A"
+        "time-5  session-2B"
+        "time-5  session-3C"
+        /* ------------ */
+        "time-6  session-4C"
+        /* ------------ */
+        "time-7  session-3A"
+        "time-7  session-3B"
+        "time-7  session-5C"
+        /* ------------ */
+        "time-8  session-6C"
+        /* ------------ */
+        "time-9  break-7"
+        /* ------------ */
+        "time-10  session-4A"
+        "time-10  session-4B"
+        "time-10  session-7C"
+        "time-10  session-2D"
+        /* ------------ */
+        "time-11  session-8C"
+        /* ------------ */
+        "time-12  session-5A"
+        "time-12  session-5B"
+        /* ------------ */
+        "time-13  break-a"
+        /* ------------ */
+        "time-14  lighting"
+        "time-15  closing"
+        /* ------------ */
+        "time-16  ending";
+    }
+    h1, h2, h3, a, span, p, div {
+      font-weight: 400;
+      font-family: 'Noto Sans CJK TC', sans-serif;
+    }
+    .desktopTime {
+      @media screen and (max-width: 900px) {
+        display: none !important;
+      }
+      height: 100%;
+      transform: translateY(calc(-50% - 1px));
+    }
+    .event {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding: .5rem;
+      p {
+        line-height: 1.2;
+        margin: .5rem 0;
+        @media screen and (max-width:900px) {
+          margin: 0;
+        }
+        &.speaker {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          @media screen and (max-width:900px) {
+            margin-top: 1rem;
+            justify-content: flex-start;
+          }
+          span {
+            padding: 0 .5rem;
+          }
+          &:before, &:after {
+            content: '';
+            height: 7pt;
+            width: 7pt;
+            background: $white;
+            transform: rotate(45deg);
+            @media screen and (max-width:900px) {
+              background: $white;
+            }
+          }
+        }
+      }
+    }
+    .session, .main, .break {
+      background: $gray;
+      color: $white;
+      @media screen and (max-width: 900px) {
+        background: none;
+      }
+    }
+    .mobileTime {
+      height: 1rem;
+      transform: translateY(-.5rem);
+      &:before {
+        content: '';
+        position: absolute;
+        background: $gold;
+        height: 7px;
+        width: 7px;
+        left: 100%;
+        transform: translateX(.5rem) rotate(45deg);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        border: 1px solid $gold;
+        border-image: linear-gradient(to right bottom, $gold, rgba($gold, .2)) 1;
+        width: calc(100vw - 6rem);
+        left: 100%;
+        transform: translateX(.5rem);
+      }
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+    }
+    .room, .break, .blank {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+    .break {
+      @media screen and (max-width: 900px) {
+        &-1, &-7, &-a {
+          display: inherit;
+        }
+      } 
+    }
+    .session {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      font-size: 12pt;
+      position: relative;
+      cursor: pointer;
+      @media screen and (max-width: 900px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        text-align: left;
+        width: 100%;
+        .info {
+          width: 100%;
+        }
+        .box {
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 1rem;
+          p {
+            margin-right: .5rem;
+          }
+        }
+      }
+      .room, .time {
+        display: none;
+        @media screen and (max-width: 900px) {
+          display: inline-flex;
+        }
+      }
+      .time {
+        justify-content: flex-end;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+      }
+      .tag {
+        margin: .5rem 0;
+        @media screen and (max-width: 900px) {
+          background-color: $gold;
+          color: $dark;
+        }
+      }
+      hr {
+        width: 2rem;
+        border: 1px solid $dark;
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &-member {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .member {
+      margin: 1rem .5rem;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .image {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+      }
+      p {
+        margin: .25rem;
+        text-align: center;
+      }
+    }
+  }
+  &-error {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .spotlight-box {
+      p.split {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @media screen and (min-width: 768px) {
+        h1 {
+          span {
+            font-size: 60pt;
+          }
+          &.symbol {
+            &:before, &:after {
+              height: 40pt;
+              width: 40pt;
+            }
+          }
+        }
+        p.bigger {
+          font-size: 22pt;
+        }
+        p, a {
+          font-size: 16pt;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

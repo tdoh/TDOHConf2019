@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li,
+span {
+  line-height: 1;
+  font-family: 'cwTeXFangSong', 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  span {
+    font-family: 'cwTeXFangSong', 'Fredericka the Great', cursive;
+    font-weight: 500;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.says {
+  font-style: italic;
+  opacity: .7;
+}
+
+.hide {
+  color: transparent;
+  &::selection {
+    background: $black;
+    color: $gold;
+  }
+}
+
+.title {
+  font-weight: 800;
+}
