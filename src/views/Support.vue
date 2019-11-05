@@ -27,9 +27,9 @@ export default {
           type: '主辦單位',
           list: [
             {
-              title: 'TDOHacker',
+              title: 'The Declaration of Hacker - TDOHacker',
               image: 'TDOH.jpg',
-              link: 'http://tdohacker.org/'
+              link: 'https://blog.tdohacker.org/'
             }
           ]
         },
@@ -45,68 +45,13 @@ export default {
           type: '協辦單位',
           list: [
             {
-              title: '博格資安企業讀書會'
-            },
-            {
-              title: '財團法人電信技術中心 (TTC)',
-              image: 'TTC.jpg',
-              link: 'https://www.ttc.org.tw/'
-            },
-            {
-              title: '台灣電腦網路危機處理暨協調中心 (TWCERT/CC)',
-              image: 'TWCERT.jpg',
-              link: 'https://twcert.org.tw/'
-            },
-            {
-              title: '教育部資通訊軟體創新人才推升計畫 (ITSA)',
-              image: 'ITSA.jpg',
-              link: 'https://www.itsa.org.tw/'
-            },
-            {
-              title: '教育部資通訊軟體創新人才推升計畫中山大學雲端運算跨校資源中心 (ITSA)',
-              image: 'ITSA-Cloud.jpg',
-              link: 'https://www.itsa.org.tw/'
-            },
-            {
-              title: '財團法人資訊工業策進會資安科技研究所 (CSTI)',
-              image: 'CSTI.jpg',
-              link: 'https://www.iii.org.tw/About/Department.aspx?dp_sqno=7&fm_sqno=36'
-            },
-            {
-              title: '盧氪賽忒股份有限公司 (Leukocyte-Lab)',
-              image: 'LKC.jpg',
-              link: 'http://leukocyte-lab.com/'
-            },
-            {
-              title: 'Klick Klack 可立可股份有限公司',
-              image: 'LUmnLaOQ.png',
-              link: 'https://www.kkco.com.tw'
-            },
-            {
-              title: '李梅樹紀念館資訊組 (LIT)',
-              image: 'LIT.jpg',
-              link: 'https://open.limeishu.org.tw/'
+              title: '教育部資訊安全人才培育計畫之子計畫4：資安產業與社群鏈結交流計畫'
             }
           ]
         },
         {
           type: '贊助單位',
           list: [
-            {
-              title: '銓鍇國際股份有限公司 (CKmates)',
-              image: 'CKMate.png',
-              link: 'http://www.ckmates.com/'
-            },
-            {
-              title: '社團法人台灣駭客協會 (HITCON)',
-              image: 'HITCON.jpg',
-              link: 'https://hitcon.org/2018/pacific/'
-            },
-            {
-              title: '趨勢科技股份有限公司 (Trend Micro)',
-              image: 'Tread.png',
-              link: 'https://www.trendmicro.com/zh_tw/business.html'
-            }
           ]
         }
       ]

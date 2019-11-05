@@ -7,11 +7,11 @@
           <p class="tag">9 / 29 10:00 ~ 16:30</p>
           <div class="title-box">
             <h2>TDOH Conf</h2>
-            <h1>2018</h1>
+            <h1>2019</h1>
             <h3>駭客地下城</h3>
             <p>地點：<a href="https://ppt.cc/fgKQWx">高雄蓮潭國際會館</a></p>
           </div>
-          <a href="https://tdohackerparty.kktix.cc/events/tdoh-conf-2018" class="button" target="_blank">立即報名</a>
+          <a href="https://tdohackerparty.kktix.cc/events/tdoh-conf-2019" class="button" target="_blank">立即報名</a>
           <Counter :endDate="endDate" v-if="endDate.getTime() > new Date().getTime()" />
         </div>
       </div>
@@ -62,7 +62,7 @@ import layout from '@/components/layout'
 export default {
   data () {
     return {
-      endDate: new Date('2018-08-18')
+      endDate: new Date('2019-08-18')
     }
   },
   components: {

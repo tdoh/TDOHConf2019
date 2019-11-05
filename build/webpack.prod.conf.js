@@ -120,7 +120,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 
     new PrerenderPlugin(
       path.resolve(__dirname, '../dist'),
-      ['/2018', '/2018/active', '/2018/agenda', '/2018/traffic', '/2018/support', '/2018/team', '/2018/map', '/2018/404'],
+      ['/2019', '/2019/active', '/2019/agenda', '/2019/traffic', '/2019/support', '/2019/team', '/2019/map', '/2019/404'],
       {
         captureAfterTime: 5000,
         phantomPageSettings: {

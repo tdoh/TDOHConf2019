@@ -2,6 +2,19 @@
   <div>
     <div class="spotlight">
       <div class="spotlight-box">
+        <h1 class="title symbol"><span>真。算命攤</span></h1>
+        <div class="content center no-indent">
+          <p class="says">
+            <br />
+            TDOH 團隊精心策劃為你推出超準的免費塔羅占卜<br />
+            塔羅占卜是神祕並且神奇的占卜方式<br />
+            只要你專心冥想你想問的感情問題工作問題或其他問題<br />
+            我們會為你精準的解釋你抽出的塔羅牌組合<br />
+            為你解答你的所有疑問<br />
+          </p>
+        </div>
+      </div>
+      <div class="spotlight-box">
         <h1 class="title symbol"><span>駭客地下黑暗商城</span></h1>
         <div class="content center no-indent">
           <p class="says">
@@ -19,24 +32,6 @@
             所以這位旅行者，你，準備好了嗎？<br />
             是要想要留下東西，還是帶走寶藏呢？」
           </p>
-        </div>
-      </div>
-      <div class="spotlight-box">
-        <h1 class="title symbol"><span>TDOH-WorkShop</span></h1>
-        <div class="content no-indent">
-          <p class="says">「駭客地下城與博格資安讀書會合作舉辦的企業資安工作坊！」</p>
-          <p>本次的工作坊分為上午場與下午場兩個部分：</p>
-          <ul>
-            <li>企業防禦 DDoS 方式，和你想的一樣嗎</li>
-            <li>Playing Malware Injection with Exploit thoughts</li>
-          </ul>
-          <p>
-            由於此為進階課程，工作坊將採取審核制，購買地下城的冒險證後通過大師們的審核即可參加，無另外收費。
-          </p>
-          <ul>
-            <li>工作坊介紹請參考<router-link :to="{ name: 'Agenda' }">議程資訊</router-link></li>
-            <li>欲報名工作坊請<a href="https://goo.gl/forms/mXzDDoS8cbRURpdJ3" target="_blank">點此報名</a> </li>
-          </ul>
         </div>
       </div>
     </div>
