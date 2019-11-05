@@ -26,19 +26,19 @@ export default {
           members: [
             {
               name: 'HrJ',
-              image: 'img31.jpg'
+              image: 'img00.jpg'
             },
             {
               name: 'Deimos',
-              image: 'img04.jpg'
-            },
-            {
-              name: 'Chun',
               image: 'img01.jpg'
             },
             {
+              name: 'Chun',
+              image: 'img02.jpg'
+            },
+            {
               name: 'ws育慈',
-              image: 'img05.jpg'
+              image: 'img03.jpg'
             }
           ]
         },
@@ -47,23 +47,23 @@ export default {
           members: [
             {
               name: '阿軒',
-              image: 'img16.jpg'
+              image: 'img10.jpg'
             },
             {
               name: '鯉魚',
-              image: 'img30.png'
+              image: 'img11.jpg'
             },
             {
               name: '小草',
-              image: 'img18.jpg'
+              image: 'img12.jpg'
             },
             {
               name: '野足',
-              image: 'img26.jpg'
+              image: 'img13.jpg'
             },
             {
               name: 'Allen Chou',
-              image: 'img26.jpg'
+              image: 'img14.jpg'
             }
           ]
         },
@@ -72,15 +72,15 @@ export default {
           members: [
             {
               name: 'blu3cat',
-              image: 'img56.jpg'
+              image: 'img20.jpg'
             },
             {
               name: '地瓜',
-              image: 'img41.jpg'
+              image: 'img21.jpg'
             },
             {
               name: '蔥蔥',
-              image: 'img33.jpg'
+              image: 'img22.jpg'
             }
           ]
         },
@@ -89,11 +89,11 @@ export default {
           members: [
             {
               name: '腦腦',
-              image: 'img03.jpg'
+              image: 'img30.jpg'
             },
             {
               name: '子為',
-              image: 'img35.jpg'
+              image: 'img31.png'
             }
           ]
         },
@@ -102,11 +102,11 @@ export default {
           members: [
             {
               name: 'Andy',
-              image: 'img09.jpg'
+              image: 'img40.jpg'
             },
             {
               name: '家康',
-              image: 'img34.jpg'
+              image: 'img41.png'
             }
           ]
         }
