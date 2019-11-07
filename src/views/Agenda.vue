@@ -215,12 +215,12 @@ export default {
             id: '4A'
           },
           {
-            name: '數位制腦權',
-            summary: ['從科技整合的角度來看不實訊息與假新聞的應對攻防'],
+            name: 'Bluetooth Sexploit: 通往性駭客的大門',
+            summary: ['介紹藍芽漏洞', '介紹其在性犯罪上的應用', '並探討資安以及性的新興議題'],
             link: '',
-            image: 'speaker5a.jpg',
-            speaker: '林穎佑',
-            bio: ['國立中正大學戰國所助理教授'],
+            image: 'speaker7a.jpg',
+            speaker: 'Kevin',
+            bio: ['哈囉我是Kevin', '目前是苦命大四生', '目前正往物連網安全的領域探索中'],
             time: '20',
             id: '5A'
           },
@@ -235,12 +235,12 @@ export default {
             id: '6A'
           },
           {
-            name: 'Bluetooth Sexploit: 通往性駭客的大門',
-            summary: ['介紹藍芽漏洞', '介紹其在性犯罪上的應用', '並探討資安以及性的新興議題'],
+            name: '數位制腦權',
+            summary: ['從科技整合的角度來看不實訊息與假新聞的應對攻防'],
             link: '',
-            image: 'speaker7a.jpg',
-            speaker: 'Kevin',
-            bio: ['哈囉我是Kevin', '目前是苦命大四生', '目前正往物連網安全的領域探索中'],
+            image: 'speaker5a.jpg',
+            speaker: '林穎佑',
+            bio: ['國立中正大學戰國所助理教授'],
             time: '20',
             id: '7A'
           },
