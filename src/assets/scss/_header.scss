@@ -33,19 +33,20 @@
     }
 
     #logo {
-      width: 333px;
-      height: 381px;
+      width: 444px;
+      height: 444px;
+      margin-top: -15px;
 
       @media screen and (max-width: 1023px) {
         flex-direction: column;
-        width: calc(333px * .75);
-        height: calc(381px * .75);
+        width: calc(444px * .75);
+        height: calc(444px * .75);
       }
 
       @media screen and (max-width: 500px) {
         flex-direction: column;
-        width: calc(333px * .5);
-        height: calc(381px * .5);
+        width: calc(444px * .5);
+        height: calc(444px * .5);
       }
     }
 
