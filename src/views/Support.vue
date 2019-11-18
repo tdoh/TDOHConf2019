@@ -46,12 +46,44 @@ export default {
           list: [
             {
               title: '教育部資訊安全人才培育計畫之子計畫4：資安產業與社群鏈結交流計畫'
+            },
+            {
+              title: '資安前瞻創新研發專案推動計畫',
+              image: '資安前瞻創新研發專案推動計畫.jpg'
+            },
+            {
+              title: '教育部資訊安全人才培育計畫',
+              image: 'ISIP.jpg'
             }
           ]
         },
         {
           type: '贊助單位',
           list: [
+            {
+              title: 'Hacks In Taiwan Conference',
+              image: 'HITCON.jpg'
+            },
+            {
+              title: 'KlickKlack Communications',
+              image: 'KlickKlack.jpg'
+            },
+            {
+              title: 'TREND MICRO 趨勢科技',
+              image: 'TrendMicro.jpg'
+            },
+            {
+              title: '財團法人電信技術中心 TELECOM TECHNOLOGY CENTER',
+              image: 'TTC.jpg'
+            },
+            {
+              title: 'TWCHACKER',
+              image: 'TWCHacker.jpg'
+            },
+            {
+              title: 'ZUSO Generation',
+              image: 'Zuso.jpg'
+            }
           ]
         }
       ]
