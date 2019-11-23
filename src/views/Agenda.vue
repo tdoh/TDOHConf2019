@@ -225,12 +225,12 @@ export default {
             id: '5A'
           },
           {
-            name: 'TBD',
-            summary: ['TBD'],
+            name: 'BFKinesiS 戰隊參加 DEFCON CTF 決賽之解題分享',
+            summary: ['此次分享主要著重於 DEFCON CTF 賽制介紹以及今年度的題目解析，對於想踏足 CTF 競賽的新手們，可以藉此機會一窺駭客聖殿的真面目，並了解參賽選手們在賽前如何準備、賽中面對未知題目時如何思考、以及攻擊時所使用的策略等只有參賽選手們知道的秘辛。'],
             link: '',
-            image: 'speaker6a.svg',
-            speaker: 'TBD',
-            bio: [''],
+            image: 'speaker6a.png',
+            speaker: 'BFKinesiS 戰隊',
+            bio: ['BFKinesiS 是由台大 Balsn、交大 BambooFox、中央 DoubleSigma、中科院 KerKerYuan 所組成的 CTF 戰隊聯隊，成員大多為學生，曾兩度參加世界駭客大賽 DEFCON CTF 取得世界第 12 (2018) 以及世界第 2 (2019) 的成績。'],
             time: '20',
             id: '6A'
           },
