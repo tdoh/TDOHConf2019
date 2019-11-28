@@ -215,12 +215,12 @@ export default {
             id: '4A'
           },
           {
-            name: 'Bluetooth Sexploit: 通往性駭客的大門',
-            summary: ['介紹藍芽漏洞', '介紹其在性犯罪上的應用', '並探討資安以及性的新興議題'],
+            name: '隔＂網＂取物－Air gap 安全問題',
+            summary: ['在現在的社會中，網路是聯繫人的最佳管道，而也是駭客們的最佳攻擊管道，但如果沒網路了，我們該怎麼辦呢??，因此今天將跟各位分享， airgap 的相關安全問題'],
             link: '',
             image: 'speaker7a.jpg',
-            speaker: 'Kevin',
-            bio: ['哈囉我是Kevin', '目前是苦命大四生', '目前正往物連網安全的領域探索中'],
+            speaker: 'blu3cat',
+            bio: ['小小的苦命大二生，也是功德院的成員，目前正踏上前往黑魔法的路途中'],
             time: '20',
             id: '5A'
           },
