@@ -37,7 +37,8 @@ export default {
           type: '承辦單位',
           list: [
             {
-              title: '社團法人臺灣校園資訊安全推廣暨駭客培育協會'
+              title: '社團法人臺灣校園資訊安全推廣暨駭客培育協會',
+              image: 'TWCHacker.jpg'
             }
           ]
         },
@@ -45,15 +46,16 @@ export default {
           type: '協辦單位',
           list: [
             {
-              title: '教育部資訊安全人才培育計畫之子計畫4：資安產業與社群鏈結交流計畫'
+              title: '教育部資訊安全人才培育計畫之子計畫4：資安產業與社群鏈結交流計畫',
+              image: 'ISIP.jpg'
             },
             {
               title: '資安前瞻創新研發專案推動計畫',
               image: '資安前瞻創新研發專案推動計畫.jpg'
             },
             {
-              title: '教育部資訊安全人才培育計畫',
-              image: 'ISIP.jpg'
+              title: '1111人力銀行',
+              image: '1111.jpg'
             }
           ]
         },
@@ -66,7 +68,7 @@ export default {
             },
             {
               title: 'KlickKlack Communications',
-              image: 'KlickKlack.jpg'
+              image: 'KlickKlack.png'
             },
             {
               title: 'TREND MICRO 趨勢科技',
@@ -75,10 +77,6 @@ export default {
             {
               title: '財團法人電信技術中心 TELECOM TECHNOLOGY CENTER',
               image: 'TTC.jpg'
-            },
-            {
-              title: 'TWCHACKER',
-              image: 'TWCHacker.jpg'
             },
             {
               title: 'ZUSO Generation',
