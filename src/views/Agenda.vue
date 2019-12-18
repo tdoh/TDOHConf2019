@@ -187,7 +187,7 @@ export default {
           {
             name: 'JiuWei: a Cross Platform and Multi Architecture Executor',
             summary: ['Functioning as the first-stage in an exploitation, shellcode play an important role in successfully triggering software vulnerability. Since this part of payload is written in low-level machine code, understanding how it works is not trivial for analysis.', 'This presentation introduces JiuWei, a cross-platform and multi architecture machine code analyzer. Based on Unicorn emulator (http://unicorn-engine.org), our tool is able to execute & analyze all kind of shellcodes, regardless of Operating System (Windows, Mac, Linux, Android, etc) or CPU architectures (Intel, Arm, Aarch64, Mips). ', 'Thanks to a powerful instrumentation engine, the output report can show what the shellcode does inside, in a friendly high-level output format.', 'In this talk, we will give a brief introduction on the design & implementation of JiuWei, some technical challenges we had to solve, and some cool live demo on some modern shellcode.'],
-            link: '',
+            link: 'https://drive.google.com/file/d/1vREaNc1SmUSTK15B9-IlzCT7Zpv0TXV8/view?usp=sharing',
             image: 'speaker2a.jpg',
             speaker: 'xwings',
             bio: ['KaiJern (xwings), is Lab Director of The ShepherdLab, of JD Security. His research topic mainly on embedded device, hardware security, blockchain security, reverse engineering and various security topics. He presented his findings in different international security conferences like Defcon, HITB, Codegate, QCon, KCon, Brucon, H2HC and etc. He conducted hardware Hacking course in various places around the globe. He is also the owner of hackersbadge.com and actively involved in Unicorn (http://unicorn-engine.org) development. '],
@@ -197,7 +197,7 @@ export default {
           {
             name: '揭露某影像監控系統廠商RCE漏洞',
             summary: ['介紹漏洞並分享發現的心路歷程，展示目前尚未公開的PoC。'],
-            link: '',
+            link: 'https://drive.google.com/file/d/1qzNFnfjwKEZgsXakXLDqAwU_5Je7QS73/view?usp=sharing',
             image: 'speaker3a.png',
             speaker: 'GrayOD',
             bio: ['一介資安工程師，偶爾搞搞滲透，偶爾搞搞逆向，偶爾搞搞隊友(疑?)。'],
@@ -217,7 +217,7 @@ export default {
           {
             name: '隔＂網＂取物－Air gap 安全問題',
             summary: ['在現在的社會中，網路是聯繫人的最佳管道，而也是駭客們的最佳攻擊管道，但如果沒網路了，我們該怎麼辦呢??，因此今天將跟各位分享， airgap 的相關安全問題'],
-            link: '',
+            link: 'https://github.com/blu3cat3803/Air_Gap_Security-in_TDOH_CONF2019',
             image: 'speaker7a.jpg',
             speaker: 'blu3cat',
             bio: ['小小的苦命大二生，也是功德院的成員，目前正踏上前往黑魔法的路途中'],
